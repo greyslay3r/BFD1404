@@ -1,0 +1,13 @@
+<?
+foreach($data as $d){
+?>
+<center>
+<form action="?action=updateaction&id=<?=$d["id"]?>" method="post">
+<input type='text' name='email' value="<?=$d["email"]?>"/>
+<br><input type='text' name='phone' value="<?=$d["phone"]?>"/>
+<br><input type='text' name='address' value="<?=$d["address"]?>"/>
+<br><input type='Submit' value="Update"/>
+
+</form>
+</center>
+<? } ?>
