@@ -75,7 +75,9 @@ if($action=='create'){
                 <input type='hidden' name='action' value='create' />
                 <input type='submit' value='Save' />
                  
-                <a href='index.php'>Back to index</a>
+                <a href='index.php'>
+                    <input type="button" value="Back to Index" title="Back to Index" />
+                </a>
             </td>
         </tr>
     </table>

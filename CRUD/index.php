@@ -5,7 +5,7 @@
          
     </head>
 <body>
-<h1>Hero Contact List</h1>
+<h1>Hero Contact Listzzzz</h1>
 <h1>PDO: Read Records</h1>
  
 <?php
@@ -27,11 +27,11 @@ $stmt->execute();
 //this is how to get number of rows returned
 $num = $stmt->rowCount();
  
-echo "<a href='add.php'>Create New Record</a>";
+// echo "<a href='add.php'>Create New Record</a>";
  
 if($num>0){ //check if more than 0 record found
  
-    echo "<table border='1'>";//start table
+    echo "<table border='1' align='center'>";//start table
      
         //creating our table heading
         echo "<tr>";
@@ -89,6 +89,13 @@ function delete_user( id ){
 }
 </script>
  
- <a href='index.php'>Back to index</a>
+    <a href='index.php'>
+       <input type="button" value="Back to Index" title="Back to Index" />
+    </a>
+
+    <a href='add.php'>
+        <input type="button" value="Create New Record" title="Create New Record" />
+    </a>
+
 </body>
 </html>

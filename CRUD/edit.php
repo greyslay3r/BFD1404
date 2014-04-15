@@ -100,7 +100,9 @@ try {
                 <input type='hidden' name='action' value='update' />
                 <input type='submit' value='Edit' />
                  
-                <a href='index.php'>Back to index</a>
+                <a href='index.php'>
+                    <input type="button" value="Back to Index" title="Back to Index" />
+                </a>
             </td>
         </tr>
     </table>
