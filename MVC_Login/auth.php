@@ -31,8 +31,6 @@ $view->show('header');
 
 
 $view->show($contentPage, $user);
-echo"here is where i wll show ther contactsModel.php";
-
 $view->show('footer');
 
 ?>

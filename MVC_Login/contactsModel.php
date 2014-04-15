@@ -17,7 +17,6 @@ class contactsModel{
 
 		$sql = "select * from users";
 		$st = $this->db->prepare($sql);
-		// var_dump($st);
 		$st->execute();
 
 		return $st->fetchAll();
