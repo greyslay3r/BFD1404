@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
+
     <head>
         <title>PDO Read Records</title>
          
     </head>
-<body>
-<h1>Hero Contact Listzzzz</h1>
-<h1>PDO: Read Records</h1>
+<body bgcolor="#cceocc">
+<h1 align='center'>Hero Contact List</h1>
  
 <?php
 //include database connection
@@ -35,12 +35,14 @@ if($num>0){ //check if more than 0 record found
      
         //creating our table heading
         echo "<tr>";
-            echo "<th>Firstname</th>";
-            echo "<th>Lastname</th>";
-            echo "<th>Username</th>";
-            echo "<th>Action</th>";
+            echo "<th bgcolor='#99ff33'>Firstname</th>";
+            echo "<th bgcolor='#99ff33'>Lastname</th>";
+            echo "<th bgcolor='#99ff33'>Username</th>";
+            echo "<th bgcolor='#99ff33'>Action</th>";
         echo "</tr>";
-         
+       
+      
+      
         //retrieve our table contents
         //fetch() is faster than fetchAll()
         
@@ -80,7 +82,7 @@ else{
 <script type='text/javascript'>
 function delete_user( id ){
      
-    var answer = confirm('Are you sure?');
+    var answer = confirm('Are you sure?');  // pop up box to confirm the delete action
     if ( answer ){
      
         //if user clicked ok, pass the id to delete.php and execute the delete query
@@ -90,11 +92,13 @@ function delete_user( id ){
 </script>
  
     <a href='index.php'>
-       <input type="button" value="Back to Index" title="Back to Index" />
+       <input type="button" style="background-color:#dac8a3;margin-left:auto;margin-right:auto;display:block;" 
+       value="Back to Index" title="Back to Index" />
     </a>
 
     <a href='add.php'>
-        <input type="button" value="Create New Record" title="Create New Record" />
+        <input type="button" style="background-color:#33add6;margin-left:auto;margin-right:auto;display:block;" 
+        value="Create New Record" title="Create New Record" />
     </a>
 
 </body>
